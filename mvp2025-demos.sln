@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mcp-cs", "mcp-cs", "{AC4CD6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelContextProtocolPlugin", "mcp-cs\ModelContextProtocolPlugin.csproj", "{FED36769-1C7F-4689-B232-5D7308FEEEDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simple-agent-with-tools-cs", "simple-agent-with-tools-cs\simple-agent-with-tools-cs.csproj", "{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,18 @@ Global
 		{FED36769-1C7F-4689-B232-5D7308FEEEDF}.Release|x64.Build.0 = Release|Any CPU
 		{FED36769-1C7F-4689-B232-5D7308FEEEDF}.Release|x86.ActiveCfg = Release|Any CPU
 		{FED36769-1C7F-4689-B232-5D7308FEEEDF}.Release|x86.Build.0 = Release|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Debug|x64.Build.0 = Debug|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Debug|x86.Build.0 = Debug|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Release|x64.ActiveCfg = Release|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Release|x64.Build.0 = Release|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Release|x86.ActiveCfg = Release|Any CPU
+		{5A1CE9EC-6588-46FA-AC75-1DADDED32E1F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

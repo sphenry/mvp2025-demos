@@ -8,4 +8,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+    <ItemGroup>
+    <PackageReference Include="DotNetEnv" Version="3.1.1" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.43.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Agents.Core" Version="1.43.0-preview" />
+  </ItemGroup>
+
+    <ItemGroup>
+    <None Update="..\.env">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

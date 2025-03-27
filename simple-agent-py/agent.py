@@ -14,7 +14,6 @@ Completion Service is passed directly via the ChatCompletionAgent constructor.
 Additionally, the plugin is supplied via the constructor.
 """
 
-
 # Define a sample plugin for the sample
 class MenuPlugin:
     """A sample Menu Plugin used for the concept sample."""
@@ -33,18 +32,7 @@ class MenuPlugin:
     ) -> Annotated[str, "Returns the price of the menu item."]:
         return "$9.99"
 
-
-# Simulate a conversation with the agent
-USER_INPUTS = [
-    "Hello",
-    "What is the special soup?",
-    "What does that cost?",
-    "Thank you",
-]
-
-
 async def main():
-    # 1. Create the agent
     agent = ChatCompletionAgent(
         service=AzureChatCompletion(),
         name="Host",
@@ -52,32 +40,17 @@ async def main():
         plugins=[MenuPlugin()],
     )
 
-    # 2. Create a thread to hold the conversation
-    # If no thread is provided, a new thread will be
-    # created and returned with the initial response
     thread: ChatHistoryAgentThread = None
 
-    for user_input in USER_INPUTS:
-        print(f"# User: {user_input}")
-        # 4. Invoke the agent for a response
-        response = await agent.get_response(messages=user_input, thread=thread)
-        print(f"# {response.name}: {response} ")
-        thread = response.thread
+    user_input = "What is the soup special and how much does it cost?"
+    print(f"# User: {user_input}")
+    # 4. Invoke the agent for a response
+    response = await agent.get_response(messages=user_input, thread=thread)
+    print(f"# {response.name}: {response} ")
+    thread = response.thread
 
     # 4. Cleanup: Clear the thread
     await thread.delete() if thread else None
-
-    """
-    Sample output:
-    # User: Hello
-    # Host: Hello! How can I assist you today?
-    # User: What is the special soup?
-    # Host: The special soup is Clam Chowder.
-    # User: What does that cost?
-    # Host: The special soup, Clam Chowder, costs $9.99.
-    # User: Thank you
-    # Host: You're welcome! If you have any more questions, feel free to ask. Enjoy your day!
-    """
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ ChatCompletionAgent agent =
         };
 
 // Create a message and a thread
-var input = "Why is the sky blue?";
+var input = "Tell me a haiku about Semantic Kernel";
 ChatMessageContent message = new(AuthorRole.User, input);
 
 AgentThread? thread = null;
